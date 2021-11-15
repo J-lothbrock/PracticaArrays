@@ -30,12 +30,16 @@ namespace PracticaArrats
             Thread.Sleep(2000);
             Console.Clear();
 
-            Console.ForegroundColor = ConsoleColor.Green;
+            
             double total = (sueldos[0] + sueldos[1] + sueldos[2] + sueldos[3]);
+            
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(nombre + "el total de tu sueldo es " + total);
             Console.ResetColor();
 
-            Console.WriteLine(nombre + "el total de tu sueldo es " + total);
-            
+            Console.ReadKey();
+
         }
     }
 }
